@@ -1,1 +1,1 @@
-# 7DaysOfCode
+# Página web desktop feita por mim utilizando HTML e CSS. Todo o código foi feito através de conhecimentos adquiridos na formação Front-end HTML e CSS da Alura. Essa foi uma atividade prática da 7DaysOfCode.
