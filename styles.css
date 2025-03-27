@@ -1,0 +1,242 @@
+:root {
+    --bg-color: #FFF;
+    --secondary-bgcolor: rgba(142, 36, 36, 0.05);
+    --footer-bgcolor: #F9FAFB;
+    --footer-credits: #98A2B3;
+    --main-font: "Inter", sans-serif;
+    --text-color: #667085;
+    --title-color: #101828;
+    --highlight-color: #8E2424;
+    --signup-color: #FFF;
+    --border-color: #EAECF0;
+}
+
+#body {
+    font-family: var(--main-font); 
+}
+
+.container {
+    display: flex;
+    padding: 1.8em 7em;
+    justify-content: space-between;
+    line-height: 150%;
+}
+.container__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #3A404E;
+}
+.container__menu {
+    display: flex;
+    gap: 2em;
+    font-weight: 500;
+    align-items: center;
+    position: relative;
+    right: 12%;
+}
+.menu__item__link {
+    color: var(--text-color);
+}
+.container a {
+    text-decoration: none;
+}
+.container__login {
+    font-weight: 500;
+    display: flex;
+    gap: 0.75em;
+}
+.container__signin {
+    color: var(--text-color);
+    padding: 0.625em 1.125em;
+}
+.container__signup {
+    color: var(--signup-color);
+    background-color: var(--highlight-color);
+    border-radius: 8px;
+    padding: 0.625em 1.125em;
+}
+
+.container__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0;
+    gap: 2em;
+    margin: 0 22%;
+    line-height: 200%;
+}
+
+.about__subtitle {
+    color: var(--highlight-color);
+    font-weight: 600;
+}
+.about__title {
+    color: var(--title-color);
+    font-size: 3rem;
+    font-weight: 600;
+}
+.about__text {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    font-weight: 400;
+    text-align: center;
+    padding-top: 1.25em;
+}
+
+.container__metrics {
+    padding-bottom: 6rem;
+}
+.metrics__list {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 2em;
+    margin: 0 6em; 
+}
+
+.metrics__title {
+    color: var(--highlight-color);
+    font-size: 3.75rem;
+    font-weight: 600;
+}
+.metrics__subtitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--title-color);
+    margin-top: 1.25em;
+}
+.metrics__text {
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 150%;
+    margin-top: 0.75em;
+}
+.container__vacancies {
+    padding: 6em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75em;
+}
+.vacancies__subtitle {
+    color: var(--highlight-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.4rem 0.9rem;
+    border-radius: 1em;
+    background: var(--secondary-bgcolor);
+}
+.vacancies__title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--title-color);
+}
+.vacancies__text {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    padding-bottom: 2.25em;
+}
+
+.container__talent {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 21em;
+    gap: 2em;
+    
+}
+.talent__title {
+    color: var(--title-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.talent__job {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    padding: 1.75em 1.75em 2em 1.75em;
+    border: 1px solid var(--border-color);
+    border-radius: 1em;
+}
+.job__title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--title-color);
+}
+.job__container {
+    display: flex;
+    gap: 1.5em;
+}
+.job__text {
+    font-weight: 500;
+    color: var(--text-color);
+}
+.container__testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 6em 7em;
+    padding: 4em;
+    border-radius: 1em;
+    background: var(--secondary-bgcolor);
+}
+.testimonial__subtitle {
+    color: var(--highlight-color);
+    font-size: 0.875rem;
+    font-weight: 600; 
+}
+.testimonial__title {
+    color: var(--title-color);
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin: 0.75em 0;
+}
+.testimonial__name {
+    font-weight: 500;
+    color: var(--title-color);
+    margin: 0.5em 0;
+}
+.testimonial__text {
+    color: var(--text-color);
+    font-size: 0.875rem;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    background-color: var(--footer-bgcolor);
+    padding: 6em 0;
+}
+.footer__title {
+    color: var(--title-color);
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+.footer__text {
+    color: var(--text-color);
+    font-size: 1.25rem;
+}
+.footer__email {
+    padding: 0.75em 3em;
+    border-radius: 0.5em;
+    border: 1px solid #D0D5DD;
+    background-color: var(--bg-color);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.footer__email::placeholder {
+    position: relative;
+    right: 15%;
+    color: var(--text-color);
+    font-family: var(--main-font);
+}
+.footer__singup {
+    text-decoration: none;
+    padding: 0.75em 1.25em;
+    margin-left: 1em;
+}
+.footer__credits {
+    color: var(--footer-credits);
+}
